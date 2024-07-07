@@ -50,3 +50,5 @@
     <a className="btn">Button</a>
   </div>
 </div>
+
+export default Navbar;
