@@ -1,6 +1,19 @@
 module.exports = {
+  //...
   daisyui: {
-    themes: ["forest", "night"],
+    themes: [
+      {
+        mytheme: {
+          "primary": "#ff0000",
+          "secondary": "#0000ff",
+          "accent": "#37cdbe",
+          "neutral": "#3d4451",
+          "base-100": "#ffffff",
+        },
+      },
+      "dark",
+      "cupcake",
+    ],
   },
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",

@@ -5,29 +5,32 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-orange-200 text-red-800 min-h-screen flex flex-col items-center justify-center">
+    <main className="bg-orange-200 text-blue-800 min-h-screen flex flex-col items-center justify-center">
       <div class="navbar bg-base-100">
         <div class="flex-none">
           <button class="btn btn-square btn-ghost">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              class="inline-block h-5 w-5 stroke-current"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
+          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+      </li>
+    </ul>
+</div>
           </button>
         </div>
         <div class="flex-1">
           <a class="btn btn-ghost text-xl">Kum Sung</a>
         </div>
-        <input type="checkbox" value="night" className="toggle theme-controller" />
+        <input type="checkbox" value="mytheme" className="toggle theme-controller" />
         <div class="flex-none">
           <button class="btn btn-square btn-ghost">
             <svg
